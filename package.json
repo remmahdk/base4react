@@ -1,11 +1,12 @@
 {
-    "name": "$app_name",
-    "version": "$app_version",
-    "description": "$app_description",
-    "main": "$app_main",
+    "name": "base4react",
+    "version": "0.0.1",
+    "description": "A very basic react template",
+    "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "webpack --mode production",
+        "start": "webpack-dev-server --open --mode development --port 3002"
     },
-    "author": "$app_author",
-    "license": "$app_license"
+    "author": "Peter Hammer Mortensen <remmah@live.dk>",
+    "license": "MIT"
 }
