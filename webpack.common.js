@@ -8,7 +8,9 @@
    },
    plugins: [
      // new CleanWebpackPlugin(['dist/*']) for < v2 versions of CleanWebpackPlugin
-     new CleanWebpackPlugin(),
+     new CleanWebpackPlugin({
+            cleanAfterEveryBuildPatterns: ['dist']
+     }),
      new HtmlWebpackPlugin({
        title: 'Production'
      })
