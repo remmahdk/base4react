@@ -3,6 +3,10 @@
     "version": "0.0.1",
     "description": "A very basic react template",
     "main": "index.js",
+    "dependencies": {
+        "express": "expressjs/express",
+        "mocha": "mochajs/mocha#4727d357ea"
+    },
     "scripts": {
         "build": "webpack --mode production",
         "start": "webpack-dev-server --open --mode development --port 3002"
