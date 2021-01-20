@@ -1,0 +1,11 @@
+{
+    "name": "$app_name",
+    "version": "$app_version",
+    "description": "$app_description",
+    "main": "$app_main",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "$app_author",
+    "license": "$app_license"
+}
