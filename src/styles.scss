@@ -1,3 +1,44 @@
 .App {
     text-align: center;
 }
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fff;  
+}
+
+body {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  background-color: #4684ee;
+}
+
+.loader {
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-weight: bold;
+  font-size: 20vh;
+  
+  opacity: 0.8;
+
+  span {
+    display: inline-block;
+    animation: pulse 0.8s alternate infinite ease-in-out;
+
+    &:nth-child(odd) {
+      animation-delay: 0.8s;
+    }
+  }
+}
+.loaderLeft:before, .loaderRight:before {display: inline;}
+.loaderLeft:before {content:'\007B'; }
+.loaderRight:before {content:'\007D'; }
+
+@keyframes pulse {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+} 
