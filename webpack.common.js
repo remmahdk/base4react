@@ -7,10 +7,7 @@
      app: './src/index.js'
    },
    plugins: [
-     // new CleanWebpackPlugin(['dist/*']) for < v2 versions of CleanWebpackPlugin
-     new CleanWebpackPlugin({
-            cleanAfterEveryBuildPatterns: ['dist']
-     }),
+     new CleanWebpackPlugin(['dist/*']),
      new HtmlWebpackPlugin({
        title: 'Production'
      })
