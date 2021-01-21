@@ -7,7 +7,9 @@
      app: './src/index.js'
    },
    plugins: [
-     new CleanWebpackPlugin(cleanAfterEveryBuildPatterns: ['dist']),
+     new CleanWebpackPlugin({
+            cleanAfterEveryBuildPatterns: ['dist']
+     }),
      new HtmlWebpackPlugin({
        title: 'Production'
      })
